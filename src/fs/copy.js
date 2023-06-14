@@ -18,6 +18,7 @@ const copy = async () => {
         const copyFilePath = path.join(copyFolderPath, fileName);
         return copyFile(filePath, copyFilePath);
     })
+    console.log('test');
 
     await Promise.all(promises);
   } catch (error) {
